@@ -1,4 +1,4 @@
-from fastapi import FastAPI3 
+from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 import uvicorn
 import cohere
@@ -86,6 +86,3 @@ def chat_chatgpt(query: str):
         print(e)
 
         return ""
-    
-
-    
