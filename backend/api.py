@@ -22,7 +22,7 @@ AUDIO_PATH = "/audios/"
 
 @app.get("/voice/{query}")
 async def voice_over(query: str):
-    set_api_key("95aef95748c1b54c5237ec67685ab53a")
+    set_api_key("api-key")
 
     audio_path = f'{AUDIOS_PATH}{query[:4]}.mp3'
     file_path = f'{AUDIO_PATH}{query[:4]}.mp3'
@@ -46,7 +46,7 @@ async def voice_over(query: str):
     
 @app.get("/voice/{query}")
 async def voice_over(query: str):
-    set_api_key("95aef95748c1b54c5237ec67685ab53a")
+    set_api_key("api-key")
 
     audio_path = f'{AUDIOS_PATH}{query[:4]}.mp3'
     file_path = f'{AUDIO_PATH}{query[:4]}.mp3'
@@ -70,7 +70,7 @@ async def voice_over(query: str):
     
 @app.get("/chat/chatgpt/{query}")
 def chat_chatgpt(query: str):
-    openai.api_key = "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"   
+    openai.api_key = "api-key"   
 
     try:
         response = openai.ChatCompletion.create(
