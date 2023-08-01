@@ -7,7 +7,7 @@ import openai
 
 app = FastAPI()
 
-origins = ['http://localhost:3000/']
+origins = ['https://imani-ai.vercel.app/']
 
 
 app.add_middleware(
