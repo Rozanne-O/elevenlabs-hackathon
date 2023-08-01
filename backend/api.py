@@ -29,7 +29,7 @@ async def voice_over(query: str):
 
     audio = generate(
         text=query,
-        voice='Bella',  # premade voice
+        voice='Didi', 
         model="eleven_monolingual_v1"
     )
 
@@ -53,7 +53,7 @@ async def voice_over(query: str):
 
     audio = generate(
         text=query,
-        voice='Bella',  # premade voice
+        voice='Rachel',  
         model="eleven_monolingual_v1"
     )
 
